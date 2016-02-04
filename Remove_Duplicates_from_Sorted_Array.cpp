@@ -25,3 +25,25 @@ public:
         return distance(nums.begin(), unique(nums.begin(), nums.end()));
     }
 };
+
+// Follow up 容許最多兩個重複
+class Solution {
+public:
+int removeDuplicates(vector<int>& nums) {
+
+// n 為 nums的size
+const int n = nums.size();
+int index = 0;
+
+// 走訪整個vector
+for (int i = 0; i < n; ++i) {
+    // 當 i > 0 並且 i < size - 1 並且
+    if (i > 0 && i < n - 1 && nums[i] == nums[i - 1] && nums[i] == nums[i + 1])
+        continue;
+    
+    nums[index++] = nums[i];
+}
+
+    return index;
+}
+};
