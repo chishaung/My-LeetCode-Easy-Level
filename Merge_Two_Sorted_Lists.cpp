@@ -31,7 +31,7 @@ public:
         }
         
         New_L -> next = (l1 == NULL) ? l2:l1;
-        return New_L;
+        return Dummy.next;
         
     }   
     
