@@ -1,4 +1,4 @@
-# My-LeetCode
+# My-LeetCode Easy Level Solutions - 38 Questions
 
 Here is the record of my work where solving questions from Leetcode.com
 
